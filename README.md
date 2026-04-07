@@ -1,8 +1,14 @@
 # gemini-multimodal
 
+[English](#english) | [繁體中文](#繁體中文)
+
+---
+
+## English
+
 A Claude Code skill for multimodal generation via Gemini API. Zero dependencies — pure `curl` + `python3`.
 
-## Capabilities
+### Capabilities
 
 | Capability | Model | Output |
 |---|---|---|
@@ -13,13 +19,13 @@ A Claude Code skill for multimodal generation via Gemini API. Zero dependencies 
 | Music Generation | Lyria 3 | MP3 |
 | Image Editing | Nano Banana (multi-turn) | PNG |
 
-## Prerequisites
+### Prerequisites
 
 - **GEMINI_API_KEY** environment variable with a **Paid Tier 1+** key
 - Free tier keys have 0 quota for all generation models
 - Get a key at [Google AI Studio](https://aistudio.google.com/apikey) — billing must be enabled
 
-## Install
+### Install
 
 ```bash
 npx skills add GGGODLIN/gemini-multimodal -g -y
@@ -31,7 +37,7 @@ Or install for current project only:
 npx skills add GGGODLIN/gemini-multimodal -y
 ```
 
-## Usage
+### Usage
 
 Once installed, Claude Code will automatically use this skill when you ask it to generate images, videos, speech, or music.
 
@@ -43,7 +49,7 @@ Once installed, Claude Code will automatically use this skill when you ask it to
 - "Generate a lo-fi hip hop beat"
 - "Edit this image: remove the background and make it transparent"
 
-## How It Works
+### How It Works
 
 This skill teaches Claude Code the exact `curl` commands to call Gemini API endpoints. No MCP server, no npm packages, no extra tooling — just shell commands that work on any macOS/Linux system.
 
@@ -56,7 +62,7 @@ This skill teaches Claude Code the exact `curl` commands to call Gemini API endp
 | Lyria | `generateContent` | Synchronous |
 | Image Editing | `generateContent` | Synchronous (temp file for base64) |
 
-## Pricing Note
+### Pricing Note
 
 All generation models require Paid Tier 1+ billing. As of April 2026:
 
@@ -70,17 +76,17 @@ All generation models require Paid Tier 1+ billing. As of April 2026:
 
 Check your quota at [AI Studio Rate Limit](https://aistudio.google.com/rate-limit).
 
-## License
+### License
 
 MIT
 
 ---
 
-# gemini-multimodal（繁體中文）
+## 繁體中文
 
 Claude Code 的多模態生成技能，透過 Gemini API 實現。零依賴 — 純 `curl` + `python3`。
 
-## 功能
+### 功能
 
 | 功能 | 模型 | 輸出 |
 |---|---|---|
@@ -91,13 +97,13 @@ Claude Code 的多模態生成技能，透過 Gemini API 實現。零依賴 — 
 | 音樂生成 | Lyria 3 | MP3 |
 | 圖片編輯 | Nano Banana（多輪對話） | PNG |
 
-## 前置需求
+### 前置需求
 
 - 設定 **GEMINI_API_KEY** 環境變數，需要 **Paid Tier 1+** 的金鑰
 - 免費金鑰的生成模型配額為 0，無法使用
 - 至 [Google AI Studio](https://aistudio.google.com/apikey) 取得金鑰，需啟用帳單功能
 
-## 安裝
+### 安裝
 
 ```bash
 npx skills add GGGODLIN/gemini-multimodal -g -y
@@ -109,7 +115,7 @@ npx skills add GGGODLIN/gemini-multimodal -g -y
 npx skills add GGGODLIN/gemini-multimodal -y
 ```
 
-## 使用方式
+### 使用方式
 
 安裝後，當你要求 Claude Code 生成圖片、影片、語音或音樂時，它會自動使用此技能。
 
@@ -121,7 +127,7 @@ npx skills add GGGODLIN/gemini-multimodal -y
 - 「生成一段 lo-fi 嘻哈節拍」
 - 「編輯這張圖片：把背景移除」
 
-## 運作原理
+### 運作原理
 
 此技能教 Claude Code 如何用 `curl` 呼叫 Gemini API 端點。不需要 MCP server、不需要 npm 套件、不需要額外工具 — 只用 macOS/Linux 內建的 shell 指令。
 
@@ -134,7 +140,7 @@ npx skills add GGGODLIN/gemini-multimodal -y
 | Lyria | `generateContent` | 同步 |
 | 圖片編輯 | `generateContent` | 同步（用暫存檔傳 base64） |
 
-## 計費說明
+### 計費說明
 
 所有生成模型需要 Paid Tier 1+ 帳單。截至 2026 年 4 月：
 
@@ -148,6 +154,6 @@ npx skills add GGGODLIN/gemini-multimodal -y
 
 可至 [AI Studio Rate Limit](https://aistudio.google.com/rate-limit) 查看配額。
 
-## 授權
+### 授權
 
 MIT
